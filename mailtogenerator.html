@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple tool by noteuclid to generate mailto links."
+    />
+    <title>'mailto:' Link Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>'mailto:' Link Generator</h1>
+    <p>
+      A <strong>mailto:</strong> link is a link that is associated with your
+      default email app. Clicking on a link like this in a browser causes your
+      browser to open your default email app with some values already filled
+      out. These apps are common in email apps and some websites.
+      <a href="mailto:someone@example.com">Click for an example.</a>
+    </p>
+    <p>
+      On this page, you can generate your own <strong>mailto:</strong> link. In
+      each box, type out what you want the default email values to be, then
+      click 'Generate'. You must at least specify the default recipient. None of
+      these values are ever stored.
+    </p>
+    <form class="mgenerator">
+      <p>Default recipient: *</p>
+      <input type="text" class="form__recipient" spellcheck="false" />
+      <p>CC recipient:</p>
+      <input type="text" class="form__cc" spellcheck="false" />
+      <p>BCC recipient:</p>
+      <input type="text" class="form__bcc" spellcheck="false" />
+      <p>Subject line:</p>
+      <input type="text" class="form__subjectline" />
+      <p>Message body:</p>
+      <textarea class="form__msg" rows="6" cols="50"></textarea>
+      <p>
+        <button class="form__generate site__button" type="button">
+          Generate
+        </button>
+      </p>
+    </form>
+    <button class="copy__link site__button hidden" type="button">
+      Copy link to clipboard
+    </button>
+    <div class="post__link__ctrl"></div>
+    <script src="generate.js"></script>
+  </body>
+</html>
