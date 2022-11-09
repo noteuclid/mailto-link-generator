@@ -8,9 +8,7 @@ const genButton = document.querySelector(".form__generate");
 const mainForm = document.querySelector(".mgenerator");
 const postLinkControl = document.querySelector(".post__link__ctrl");
 const copyClipboardButton = document.querySelector(".copy__link");
-console.log(
-  "If you are wondering why this site looks like its from the 90s, it's because I have yet to learn any advanced CSS. Sorry."
-);
+
 let finalOutput;
 genButton.addEventListener("click", function (e) {
   postLinkControl.textContent = "";
